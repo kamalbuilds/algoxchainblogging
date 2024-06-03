@@ -17,6 +17,7 @@ import {
 } from "@wormhole-foundation/sdk";
 import evm from "@wormhole-foundation/sdk/evm";
 import solana from "@wormhole-foundation/sdk/solana";
+import algorand from "@wormhole-foundation/sdk/algorand";
 
 import { useEffect, useState } from "react";
 
@@ -36,6 +37,7 @@ const msk = new MetaMaskSDK(
 function Support(addr : any) {
   
     const NETWORK = "Testnet";
+
   const [evmProvider, setEvmProvider] = useState<SDKProvider | null>(null);
   const [evmSigner, setEvmSigner] = useState<SignAndSendSigner<
     Network,
@@ -44,22 +46,45 @@ function Support(addr : any) {
 
   const [phantomProvider, setPhantomProvider] =
     useState<PhantomProvider | null>(null);
+
   const [solSigner, setSolSigner] = useState<SignAndSendSigner<
     Network,
     Chain
   > | null>(null);
 
+  const [algoSigner, setAlgoSigner] = useState<SignAndSendSigner<
+  Network,
+  Chain
+> | null>(null);
+
   const [srcChain,setSrcChain] = useState<Chain>("Avalanche");
   const [dstChain] = useState<Chain>("Solana");
 
   function getSigner(chain: Chain): Signer {
-    const isEvm = chainToPlatform(chain) === "Evm"
-    const s =  isEvm? evmSigner : solSigner;
-    if(!s) throw new Error("No signer for: "+ chain)
-    if(isEvm){
-      (s as MetaMaskSigner).requestChainChange(chain)
+    const receivedChain = chainToPlatform(chain);
+    let signer: Signer | null = null;
+  
+    switch (receivedChain) {
+      case "Evm":
+        signer = evmSigner;
+        break;
+      case "Solana":
+        signer = solSigner;
+        break;
+      case "Algorand":
+        signer = algoSigner;
+        break;
+      default:
+        throw new Error("No signer for: " + chain);
     }
-    return s
+  
+    if (!signer) throw new Error("No signer for: " + chain);
+  
+    if (receivedChain === "Evm" && signer instanceof MetaMaskSigner) {
+      signer.requestChainChange(chain);
+    }
+  
+    return signer;
   }
 
   function getAddresses()  {
@@ -88,7 +113,7 @@ function Support(addr : any) {
   };
 
   useEffect(() => {
-    if (!wh) wormhole(NETWORK, [evm, solana]).then(setWormhole);
+    if (!wh) wormhole(NETWORK, [evm, solana, algorand]).then(setWormhole);
   });
 
   // Effect for phantom/solana
@@ -187,7 +212,7 @@ function Support(addr : any) {
           <option value="Base">Base</option>
           <option value="Bsc">Bsc</option>
           {/* Add other options here... */}
-          <option value="Scroll">Scroll</option>
+          <option value="Scroll">Scroll</option>8
         </select>
         <p>
           {srcChain}: {getAddresses()[srcChain]}{" "}

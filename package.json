@@ -14,7 +14,9 @@
   "private": true,
   "dependencies": {
     "@coral-xyz/anchor": "^0.29.0",
+    "@daffiwallet/connect": "^1.0.3",
     "@metamask/sdk": "^0.18.2",
+    "@perawallet/connect": "^1.2.1",
     "@shyft-to/js": "^0.2.36",
     "@solana-developers/preset-next": "2.2.0",
     "@solana/spl-token": "0.4.1",
@@ -28,6 +30,7 @@
     "@tailwindcss/typography": "0.5.10",
     "@tanstack/react-query": "5.24.1",
     "@tanstack/react-query-next-experimental": "5.24.1",
+    "@txnlab/use-wallet": "2.3.1",
     "@wormhole-foundation/sdk": "^0.5.2",
     "bs58": "5.0.0",
     "buffer": "6.0.3",

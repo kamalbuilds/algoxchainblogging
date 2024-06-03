@@ -1,14 +1,14 @@
-### algoquill 🪶 : Ink Your Legacy on Algorand 🪶
+### Algoquill 🪶 : Ink Your Legacy on Algorand with CrossChain Support 🪶
 
-**Tagline**: Your decentralised Blog Publishing Revolutionary platform powered by Solana cNFTs and Wormhole for cross-chain support to the creators.
+**Tagline**: Your decentralised Blog Publishing Revolutionary platform powered by algorand nfts and Wormhole for cross-chain support to the creators.
 
 ## Introduction
 
-Welcome to **algoquill**, where the art of writing meets the innovation of blockchain. As a pioneering decentralized publishing platform powered by Solana, algoquill offers a comprehensive ecosystem for writers, readers, and crypto-enthusiasts. By merging the timeless tradition of storytelling with cutting-edge blockchain technology, algoquill not only champions freedom of expression but also redefines content monetization and ownership.
+Welcome to **algoquill**, where the art of writing meets the innovation of blockchain. As a pioneering decentralized publishing platform powered by algorand, algoquill offers a comprehensive ecosystem for writers, readers, and crypto-enthusiasts. By merging the timeless tradition of storytelling with cutting-edge blockchain technology, algoquill not only champions freedom of expression but also redefines content monetization and ownership.
 
-- Write a decentralised blog -> Mint it into NFT  -> Share with supporters->get Empowered and cross-chain support from supporters of your work, they intern recieve memorable cNFTs automatically from your collection as mark of onchain support.
+- Write a decentralised blog -> Mint it into NFT  -> Share with supporters->get Empowered and cross-chain support from supporters of your work, they intern recieve memorable nfts automatically from your collection as mark of onchain support.
 
-- These cNFTs can be seen on drip.haus too and bring more value and reach by becoming innovative collectibles.
+- These nfts can be seen on drip.haus too and bring more value and reach by becoming innovative collectibles.
 
 ## Features
 
@@ -30,11 +30,11 @@ Welcome to **algoquill**, where the art of writing meets the innovation of block
 ## Why algoquill?
 
 - **Decentralized Publishing**: At algoquill, we are committed to decentralization, ensuring that creators have full control and authority over their work. This foundational principle cultivates a rich, diversified community where every voice can be heard.
-- **Transparent and Secure**: Leveraging the Solana blockchain, algoquill guarantees a level of transparency and security unmatched in traditional publishing platforms. Every interaction is immutable, providing trust and integrity to our community members.
+- **Transparent and Secure**: Leveraging the algorand blockchain, algoquill guarantees a level of transparency and security unmatched in traditional publishing platforms. Every interaction is immutable, providing trust and integrity to our community members.
 - **Empowerment through Innovation**: We believe in empowering authors and supporters alike, offering tools and opportunities to revolutionize how content is created, shared, and valued in the digital age.
 
 ## Join the algoquill Community
 
-algoquill is more than just a platform; it's a movement towards liberating digital content creation and appreciation. Whether you're a passionate writer, an avid reader, or a crypto enthusiast, algoquill welcomes you to be part of this revolutionary journey. Embrace the future of content on the solana blockchain with algoquill.
+algoquill is more than just a platform; it's a movement towards liberating digital content creation and appreciation. Whether you're a passionate writer, an avid reader, or a crypto enthusiast, algoquill welcomes you to be part of this revolutionary journey. Embrace the future of content on the algorand blockchain with algoquill.
 
 **algoquill**: Where every story is an asset, and every contribution is cherished.

@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { UserContext } from "../lib/context";
 import { auth } from "../lib/firebase";
+import AlgoConnect from "./AlgoConnect";
 
 function Navbar() {
   const { username, user } = useContext(UserContext);
@@ -39,6 +40,7 @@ function Navbar() {
           </Link>
         </li>
       )}
+      <AlgoConnect />
     </nav>
   );
 }

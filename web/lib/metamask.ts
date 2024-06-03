@@ -9,7 +9,8 @@ import {
 } from "@wormhole-foundation/sdk";
 import "../app/support.module.css";
 
-const NETWORK ="Testnet"
+const NETWORK ="Testnet";
+
 export class MetaMaskSigner implements SignAndSendSigner<Network, Chain> {
   private constructor(
     private provider: SDKProvider,

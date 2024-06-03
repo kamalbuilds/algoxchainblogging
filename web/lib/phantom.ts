@@ -74,7 +74,7 @@ import {
       if (!provider.publicKey)
         throw new Error("No public key, did you forget to call connect?");
   
-      const ctx = wh.getChain("Solana");
+      const ctx = wh.getChain("Algorand");
       return new PhantomSigner(
         await ctx.getRpc(),
         provider,

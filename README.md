@@ -1,96 +1,40 @@
-# xchainbloggingdapp
+### algoquill 🪶 : Ink Your Legacy on Algorand 🪶
 
-This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
+**Tagline**: Your decentralised Blog Publishing Revolutionary platform powered by Solana cNFTs and Wormhole for cross-chain support to the creators.
 
-## Getting Started
+## Introduction
 
-### Prerequisites
+Welcome to **algoquill**, where the art of writing meets the innovation of blockchain. As a pioneering decentralized publishing platform powered by Solana, algoquill offers a comprehensive ecosystem for writers, readers, and crypto-enthusiasts. By merging the timeless tradition of storytelling with cutting-edge blockchain technology, algoquill not only champions freedom of expression but also redefines content monetization and ownership.
 
-- Node v18.18.0 or higher
+- Write a decentralised blog -> Mint it into NFT  -> Share with supporters->get Empowered and cross-chain support from supporters of your work, they intern recieve memorable cNFTs automatically from your collection as mark of onchain support.
 
-- Rust v1.77.2 or higher
-- Anchor CLI 0.30.0 or higher
-- Solana CLI 1.18.9 or higher
+- These cNFTs can be seen on drip.haus too and bring more value and reach by becoming innovative collectibles.
 
-### Installation
+## Features
 
-#### Clone the repo
+### 🖋 **Seamless Writing & Publishing**
 
-```shell
-git clone <repo-url>
-cd <repo-name>
-```
+- **Intuitive Authoring Tools**: algoquill provides a rich, user-friendly interface, making the journey from thought to publication effortless and enjoyable for writers of all calibers.
+- **Curated Reading Experience**: Delve into a vast collection of writings across various genres. algoquill is your gateway to exploring, discovering, and getting inspired by content that matters to you.
 
-#### Install Dependencies
+### 🎨 **NFT Minting & Ownership**
 
-```shell
-npm install
-```
+- **Your Work, Your Asset**: Transform your articles and stories into unique NFTs, offering a new dimension of content ownership and value creation.
+- **Rights & Royalties**: With each piece minted, authors maintain indisputable ownership, benefit from content tracking, and earn from subsequent trades or transactions.
 
-#### Start the web app
+### 💫 **Engage & Support**
 
-```
-npm run dev
-```
+- **Direct Support with Cryptocurrency**: Show your appreciation for your favorite authors by directly donating cryptocurrencies like SOL, USDC, and USDT, or engage in cross-chain donations with Wormhole technology.
+- **Earn Compressed NFTs**: Supporters are rewarded with exclusive compressed NFTs as a token of gratitude and proof of their support, bridging a unique connection between the author and the audience.
 
-## Apps
+## Why algoquill?
 
-### anchor
+- **Decentralized Publishing**: At algoquill, we are committed to decentralization, ensuring that creators have full control and authority over their work. This foundational principle cultivates a rich, diversified community where every voice can be heard.
+- **Transparent and Secure**: Leveraging the Solana blockchain, algoquill guarantees a level of transparency and security unmatched in traditional publishing platforms. Every interaction is immutable, providing trust and integrity to our community members.
+- **Empowerment through Innovation**: We believe in empowering authors and supporters alike, offering tools and opportunities to revolutionize how content is created, shared, and valued in the digital age.
 
-This is a Solana program written in Rust using the Anchor framework.
+## Join the algoquill Community
 
-#### Commands
+algoquill is more than just a platform; it's a movement towards liberating digital content creation and appreciation. Whether you're a passionate writer, an avid reader, or a crypto enthusiast, algoquill welcomes you to be part of this revolutionary journey. Embrace the future of content on the solana blockchain with algoquill.
 
-You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the command with `npm run`, eg: `npm run anchor`.
-
-#### Sync the program id:
-
-Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
-
-You will manually need to update the constant in `anchor/lib/counter-exports.ts` to match the new program id.
-
-```shell
-npm run anchor keys sync
-```
-
-#### Build the program:
-
-```shell
-npm run anchor-build
-```
-
-#### Start the test validator with the program deployed:
-
-```shell
-npm run anchor-localnet
-```
-
-#### Run the tests
-
-```shell
-npm run anchor-test
-```
-
-#### Deploy to Devnet
-
-```shell
-npm run anchor deploy --provider.cluster devnet
-```
-
-### web
-
-This is a React app that uses the Anchor generated client to interact with the Solana program.
-
-#### Commands
-
-Start the web app
-
-```shell
-npm run dev
-```
-
-Build the web app
-
-```shell
-npm run build
-```
+**algoquill**: Where every story is an asset, and every contribution is cherished.

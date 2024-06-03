@@ -1,14 +1,14 @@
 ### Algoquill 🪶 : Ink Your Legacy on Algorand with CrossChain Support 🪶
 
-**Tagline**: Your decentralised Blog Publishing Revolutionary platform powered by algorand nfts and Wormhole for cross-chain support to the creators.
+**Tagline**: Your decentralised Blog Publishing Revolutionary platform powered by Algorand Blockchain , NFTs and Wormhole for cross-chain support to the creators.
 
 ## Introduction
 
-Welcome to **algoquill**, where the art of writing meets the innovation of blockchain. As a pioneering decentralized publishing platform powered by algorand, algoquill offers a comprehensive ecosystem for writers, readers, and crypto-enthusiasts. By merging the timeless tradition of storytelling with cutting-edge blockchain technology, algoquill not only champions freedom of expression but also redefines content monetization and ownership.
+Welcome to **algoquill**, where the art of writing meets the innovation of blockchain. As a pioneering decentralized publishing platform powered by Algorand, algoquill offers a comprehensive ecosystem for writers, readers, and crypto-enthusiasts. By merging the timeless tradition of storytelling with cutting-edge blockchain technology, algoquill not only champions freedom of expression but also redefines content monetization and ownership.
 
 - Write a decentralised blog -> Mint it into NFT  -> Share with supporters->get Empowered and cross-chain support from supporters of your work, they intern recieve memorable nfts automatically from your collection as mark of onchain support.
 
-- These nfts can be seen on drip.haus too and bring more value and reach by becoming innovative collectibles.
+- Turn them into cNFTs can be seen on drip.haus too and bring more value and reach by becoming innovative collectibles.
 
 ## Features
 

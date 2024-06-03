@@ -5,12 +5,12 @@ import { useMemo } from 'react';
 import { ellipsify } from '../ui/ui-layout';
 import { ExplorerLink } from '../cluster/cluster-ui';
 import {
-  useCounterProgram,
-  useCounterProgramAccount,
-} from './counter-data-access';
+  useSolscribeProgram,
+  useSolscribeProgramAccount,
+} from './solscribe-data-access';
 
-export function CounterCreate() {
-  const { initialize } = useCounterProgram();
+export function SolscribeCreate() {
+  const { initialize } = useSolscribeProgram();
 
   return (
     <button
@@ -23,8 +23,8 @@ export function CounterCreate() {
   );
 }
 
-export function CounterList() {
-  const { accounts, getProgramAccount } = useCounterProgram();
+export function SolscribeList() {
+  const { accounts, getProgramAccount } = useSolscribeProgram();
 
   if (getProgramAccount.isLoading) {
     return <span className="loading loading-spinner loading-lg"></span>;
@@ -46,7 +46,7 @@ export function CounterList() {
       ) : accounts.data?.length ? (
         <div className="grid md:grid-cols-2 gap-4">
           {accounts.data?.map((account) => (
-            <CounterCard
+            <SolscribeCard
               key={account.publicKey.toString()}
               account={account.publicKey}
             />
@@ -62,14 +62,14 @@ export function CounterList() {
   );
 }
 
-function CounterCard({ account }: { account: PublicKey }) {
+function SolscribeCard({ account }: { account: PublicKey }) {
   const {
     accountQuery,
     incrementMutation,
     setMutation,
     decrementMutation,
     closeMutation,
-  } = useCounterProgramAccount({ account });
+  } = useSolscribeProgramAccount({ account });
 
   const count = useMemo(
     () => accountQuery.data?.count ?? 0,

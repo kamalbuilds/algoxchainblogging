@@ -2,51 +2,51 @@
 
 use anchor_lang::prelude::*;
 
-declare_id!("HoAJWJ3xfDVp6zSRrst79GnxfbyvqLgyAXfr9jKTKCbq");
+declare_id!("4p1tduyH9SQLzmHgGHTxmeDa5QX1zdUEask4PbhYFerY");
 
 #[program]
-pub mod counter {
+pub mod solscribe {
     use super::*;
 
-  pub fn close(_ctx: Context<CloseCounter>) -> Result<()> {
+  pub fn close(_ctx: Context<CloseSolscribe>) -> Result<()> {
     Ok(())
   }
 
   pub fn decrement(ctx: Context<Update>) -> Result<()> {
-    ctx.accounts.counter.count = ctx.accounts.counter.count.checked_sub(1).unwrap();
+    ctx.accounts.solscribe.count = ctx.accounts.solscribe.count.checked_sub(1).unwrap();
     Ok(())
   }
 
   pub fn increment(ctx: Context<Update>) -> Result<()> {
-    ctx.accounts.counter.count = ctx.accounts.counter.count.checked_add(1).unwrap();
+    ctx.accounts.solscribe.count = ctx.accounts.solscribe.count.checked_add(1).unwrap();
     Ok(())
   }
 
-  pub fn initialize(_ctx: Context<InitializeCounter>) -> Result<()> {
+  pub fn initialize(_ctx: Context<InitializeSolscribe>) -> Result<()> {
     Ok(())
   }
 
   pub fn set(ctx: Context<Update>, value: u8) -> Result<()> {
-    ctx.accounts.counter.count = value.clone();
+    ctx.accounts.solscribe.count = value.clone();
     Ok(())
   }
 }
 
 #[derive(Accounts)]
-pub struct InitializeCounter<'info> {
+pub struct InitializeSolscribe<'info> {
   #[account(mut)]
   pub payer: Signer<'info>,
 
   #[account(
   init,
-  space = 8 + Counter::INIT_SPACE,
+  space = 8 + Solscribe::INIT_SPACE,
   payer = payer
   )]
-  pub counter: Account<'info, Counter>,
+  pub solscribe: Account<'info, Solscribe>,
   pub system_program: Program<'info, System>,
 }
 #[derive(Accounts)]
-pub struct CloseCounter<'info> {
+pub struct CloseSolscribe<'info> {
   #[account(mut)]
   pub payer: Signer<'info>,
 
@@ -54,17 +54,17 @@ pub struct CloseCounter<'info> {
   mut,
   close = payer, // close account and return lamports to payer
   )]
-  pub counter: Account<'info, Counter>,
+  pub solscribe: Account<'info, Solscribe>,
 }
 
 #[derive(Accounts)]
 pub struct Update<'info> {
   #[account(mut)]
-  pub counter: Account<'info, Counter>,
+  pub solscribe: Account<'info, Solscribe>,
 }
 
 #[account]
 #[derive(InitSpace)]
-pub struct Counter {
+pub struct Solscribe {
   count: u8,
 }

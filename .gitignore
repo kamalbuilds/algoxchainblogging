@@ -35,7 +35,6 @@ Thumbs.db
 .nx/cache
 # Next.js
 .next
-out
 .anchor
 anchor/target/deploy
 anchor/target/debug
@@ -46,3 +45,5 @@ anchor/target/.rustc_info.json
 !anchor/target/types/*.ts
 test-ledger
 .yarn
+
+.env

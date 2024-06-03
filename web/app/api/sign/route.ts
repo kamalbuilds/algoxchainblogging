@@ -6,10 +6,6 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest, res: NextResponse) {
     console.log("i m here");
-      // @ts-ignore
-    const request = await req.json();
-
-    console.log(request,"req");
     
     const PRIVATE_KEY = process.env.SOLANA_PRIVATE_KEY;
 
@@ -31,7 +27,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
     try {
       console.log(req.body,"body", req);
       // @ts-ignore
-      const { network, encodedTransaction } = await req.json();
+      const { network, encodedTransaction } = await req.json();;
 
       console.log(network,encodedTransaction,"nexc")
       if (!PRIVATE_KEY) {
